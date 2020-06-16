@@ -189,6 +189,13 @@ body {
     color:#222;
 }
 
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+    #banner h1 {
+        font-size:65px;
+    }
+}
+
 .firstName {
     color: #fff;
 }

@@ -51,6 +51,10 @@ body, div, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th
     text-align: left;
 }
 
+.link:hover {
+    text-decoration: underline;
+}
+
 #technologies li {
     display: inline-block;
     margin: 7px;
@@ -118,29 +122,6 @@ body, div, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th
   background: linear-gradient(to bottom, #cf8a05, rgba(52,152,219,0));
   top: 100%;
   left: 303px;
-}
-
-@media only screen and (max-width: 750px) {
-  #experience-timeline:before,#experience-timeline:after {
-    left: 23px;
-  }
-
-  .vtimeline-date {
-    width: auto;
-    text-align: left;
-    position: relative;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: 70px;
-  }
-
-  .vtimeline-icon {
-    margin-left: 0;
-  }
-
-  .vtimeline-content {
-    margin-left: 70px;
-  }
 }
 
 .vtimeline-point {
@@ -1491,6 +1472,23 @@ blockquote {
     .featherlight-previous span {
         display: block;
     }
+
+    #experience-timeline:before,#experience-timeline:after {
+        left: 23px;
+    }
+
+    .vtimeline-date {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: 70px;
+    }
+
+    .vtimeline-content {
+        margin-left: 70px;
+    }
 }
 
 /* handling phones and small screens */
@@ -2429,6 +2427,27 @@ blockquote {
         display: none !important;
     }
 
+    #header aside {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        padding-top:3px;
+        padding-right: 5px;
+    }
+
+    #header aside ul {
+        margin-top: 0 !important;
+        padding-top: 6px;
+    }
+
+    #header.nav-solid aside {
+        top: 20px;
+    }
+
+    .vtimeline-icon {
+        margin-left: 0;
+    }
 }
 
 /* Mobile to Tablet Portrait
@@ -2444,9 +2463,8 @@ blockquote {
         display:none;
     }
 
-
     .row {
-        padding: 15px 0 !important;
+        padding: 15px !important;
     }
 
     .col-1, .col-2, .col-5, .col-7, .col-9, .col-11, .col-2-3, .col-3-4, .col-61, .col-38, .row {
@@ -2454,7 +2472,7 @@ blockquote {
     }
 
     .col-3, .col-4, .col-6, .col-8, .col-10, .col-12 {
-        width: 50%;
+        width: 100%;
     }
 
     /*-----------------Header Elements-----------------*/
@@ -2508,6 +2526,10 @@ blockquote {
     #landing-footer .social-icons {
         float: right;
         width: 50%;
+    }
+
+    .vtimeline-icon {
+        margin-left: 0;
     }
 
 }
